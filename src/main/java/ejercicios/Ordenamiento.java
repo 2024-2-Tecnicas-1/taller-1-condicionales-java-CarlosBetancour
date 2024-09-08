@@ -10,8 +10,40 @@ import java.util.Scanner;
  */
 public class Ordenamiento {
     public static String evaluar(int numero1, int numero2, int numero3, int numero4) {
-        // TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-        return "";
+        int temp;
+        
+        if (numero1 > numero2) {
+            temp = numero1;
+            numero1 = numero2;
+            numero2 = temp;
+        }
+        if (numero1 > numero3) {
+            temp = numero1;
+            numero1 = numero3;
+            numero3 = temp;
+        }
+        if (numero1 > numero4) {
+            temp = numero1;
+            numero1 = numero4;
+            numero4 = temp;
+        }
+        if (numero2 > numero3) {
+            temp = numero2;
+            numero2 = numero3;
+            numero3 = temp;
+        }
+        if (numero2 > numero4) {
+            temp = numero2;
+            numero2 = numero4;
+            numero4 = temp;
+        }
+        if (numero3 > numero4) {
+            temp = numero3;
+            numero3 = numero4;
+            numero4 = temp;
+        }
+
+        return numero1 + " " + numero2 + " " + numero3 + " " + numero4;
     }
     
     public static void main(String[] args) {
